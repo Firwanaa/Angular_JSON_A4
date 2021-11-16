@@ -1,0 +1,38 @@
+<mat-tab-group  class="mat-elevation-z4">
+  <mat-tab label="Long-Term Care">
+<div class="container">
+	<table mat-table >
+      <tr id="tr1">
+        <th>Date</th>
+        <th>Active</th>
+        <th>Resolved</th>
+        <th>Confirmed</th>
+        <th>Deaths</th>
+      </tr>
+      <tr *ngFor="let item of covidInfo" >
+        <td>{{ item.Report_Data_Extracted }}</td>
+        <td>{{ item.LTC_Homes_with_Active_Outbreak }}</td>
+        <td>{{ item.LTC_Homes_with_Resolved_Outbreak }}</td>
+        <td>{{ item.Confirmed_Active_LTC_Resident_Cases}}</td>
+        <td>{{ item.Total_LTC_Resident_Deaths}}</td>
+      </tr>
+    </table></div>
+  </mat-tab>
+  <mat-tab label="Health Care Workers">
+	  <div class="container">
+    <table mat-table>
+      <tr id="tr2">
+        <th>Date</th>
+        <th>Total Cases</th>
+        <th>Total Deaths</th>
+      </tr>
+      <tr *ngFor="let item of covidInfo">
+        <td>{{ item.Report_Data_Extracted }}</td>
+        <td>{{ item.Confirmed_Active_LTC_HCW_Cases }}</td>
+        <td>{{ item.Total_LTC_HCW_Deaths }}</td>
+      </tr>
+    </table>
+</div>
+  </mat-tab>
+
+</mat-tab-group>

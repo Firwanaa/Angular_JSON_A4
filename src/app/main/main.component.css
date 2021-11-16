@@ -1,0 +1,41 @@
+table, th, td {
+  border: 1px solid black;
+  width: 100%;
+  table-layout: fixed;
+
+}
+.mat-elevation-z4{
+  background-color:rgb(247, 216, 186);
+
+}
+th{
+  padding: 2px;
+  font-size: 12px;
+}
+#tr1{
+  background-color: rgb(186, 233, 57);
+
+}
+#tr2
+{
+  background-color: rgb(123, 182, 245);
+
+}
+td {
+  font-size: 11px;
+  background-color:rgb(240, 203, 109);
+}
+
+.container
+{
+  height: 592px;
+}
+
+
+@media screen and (orientation: landscape) {
+
+	.container {
+    height: 177px;
+	}
+  
+}

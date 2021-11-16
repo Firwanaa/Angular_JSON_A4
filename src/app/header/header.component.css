@@ -1,0 +1,11 @@
+#header {
+  background-color: #dd2352b7;
+  text-align: center;
+  border-radius: -1px;
+  /* border: 2px solid #d63c89; */
+  margin: auto;
+  color: aliceblue;
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
